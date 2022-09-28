@@ -12,6 +12,10 @@ cur.execute("insert into PhoneBook values ('derick', '010-111');")
 name = "gildong"
 phoneNumber = "010-222"
 cur.execute("insert into PhoneBook values (?, ?);", (name, phoneNumber))
+#여러건 입력 
+datalist = (("tom","010-123"), ("dsp","010-5678"))
+cur.executemany("insert into PhoneBook values (?, ?);", datalist)
+
 #검색
 cur.execute("select * from PhoneBook;")
 for row in cur:
