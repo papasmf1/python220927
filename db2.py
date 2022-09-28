@@ -2,8 +2,8 @@
 import sqlite3
 #연결객체(일단은 메모리에서 작업)
 #con = sqlite3.connect(":memory:")
-#실제 물리적인 파일에 저장
-con = sqlite3.connect("c:\\work\\test.db")
+#실제 물리적인 파일에 저장(sample.db)
+con = sqlite3.connect("c:\\work\\sample.db")
 
 #구문을 실행하는 커서 
 cur = con.cursor()
@@ -22,3 +22,5 @@ cur.executemany("insert into PhoneBook values (?, ?);", datalist)
 #검색
 cur.execute("select * from PhoneBook;")
 print( cur.fetchall() )
+#연결객체에서 완료
+con.commit() 
