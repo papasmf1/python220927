@@ -3,7 +3,7 @@ import sqlite3
 #연결객체(일단은 메모리에서 작업)
 #con = sqlite3.connect(":memory:")
 #실제 물리적인 파일에 저장(sample.db)
-con = sqlite3.connect("c:\\work\\sample.db")
+con = sqlite3.connect("c:\\work\\sample2.db")
 
 #구문을 실행하는 커서 
 cur = con.cursor()
