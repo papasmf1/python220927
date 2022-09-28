@@ -10,7 +10,7 @@ random.shuffle(lotto)
 print(lotto)
 
 print("---샘플링---")
-print( random.sample(range(20), 10) )
+print( random.sample(range(30), 5) )
 print( random.sample(range(20), 10) )
 print( random.sample(range(20), 10) )
 
@@ -23,4 +23,14 @@ print( getsize("c:\\python39\\python.exe") )
 #운영체제 정보
 from os import * 
 print("운영체제:", name)
-system("notepad.exe")
+#system("notepad.exe")
+
+#파일리스트 
+import glob 
+print( glob.glob("c:\\work\\*.py") )
+result = glob.glob("c:\\work\\*.*")
+for item in result:
+    print(item)
+
+
+
