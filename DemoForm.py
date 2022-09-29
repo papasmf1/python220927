@@ -11,9 +11,8 @@ class DemoForm(QDialog, form_class):
         super().__init__()
         self.setupUi(self)
         self.label.setText("첫번째 화면")
-#직접 모듈을 실행한 경우(진입점, main()함수)
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    demoWindow = DemoForm()
-    demoWindow.show() 
-    app.exec_()
+
+app = QApplication(sys.argv)
+demoWindow = DemoForm()
+demoWindow.show() 
+app.exec_()
