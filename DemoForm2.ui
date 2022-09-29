@@ -27,7 +27,7 @@
      <item>
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>첫번째</string>
+        <string>여기에 입력</string>
        </property>
       </widget>
      </item>
@@ -65,7 +65,7 @@
      </font>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>여기에 출력</string>
     </property>
    </widget>
   </widget>
