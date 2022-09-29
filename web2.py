@@ -13,7 +13,12 @@ title = cartoons[0].find("a").text
 link = cartoons[0].find("a")["href"]
 print(title)
 print(link)
+print("개수:{0}".format(len(cartoons)))
 #주석처리:검색할 태그
 # <td class="title">
-# 	<a href="/webtoon/detail">마음의 소리 50화 <격렬한 나의 하루> </a>
+# 	<a href="/webtoon/detail?titleId=20853&no=50&weekday=fri" onclick="nclk_v2(event,'lst.title','20853','50')">마음의 소리 50화 &lt;격렬한 나의 하루&gt;</a>
 # </td>
+for item in cartoons:
+    title = item.find("a").text.strip()
+    print(title)
+    
